@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VR/AR Kullanıcı Deneyimi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="fas fa-vr-cardboard me-2"></i>VR/AR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#giris">Giriş</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vr">VR Nedir?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ar">AR Nedir?</a></li>
+           <li class="nav-item"><a class="nav-link" href="#ar">Geçmisten Gelecege</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kullanici-deneyimi">Deneyim</a></li>
+          <li class="nav-item"><a class="nav-link" href="#zorluklar">Zorluklar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cozumler">Çözümler</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Premium YouTube Video Hero Section -->
+  <header id="hero" class="video-hero">
+    <div class="video-overlay"></div>
+
+    <!-- YouTube Video Background -->
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&mute=1&loop=1&playlist=YE7VzlLtp-4&controls=0&modestbranding=1&rel=0"
+        frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="youtube-video" loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content text-center">
+      <div class="container">
+        <h1 class="hero-title">
+          <span class="title-gradient">VR/AR Kullanıcı Deneyimi</span>
+        </h1>
+        <p class="hero-subtitle">Sanal ve artırılmış gerçeklikte sınırları zorlayan etkileşimler</p>
+        <div class="hero-cta">
+          <a href="#vr" class="cta-button">
+            <span>Keşfetmeye Başla</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow-down"></div>
+    </div>
+  </header>
+
+  <!-- VR Nedir -->
+  <section id="vr" class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="images/vr1.jpg" alt="VR Gözlüğü Takmış Kişi" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">VR Nedir?</h2>
+          <p class="lead">VR (Virtual Reality), tamamen dijital olarak oluşturulmuş ortamlarda kullanıcıyı
+            fiziksel olarak da içine alan bir deneyim sunar.</p>
+          <ul>
+            <li>🎯 Sanal simülasyonlarla eğitimde kullanılır</li>
+            <li>🎮 Oyun sektöründe sürükleyici deneyimler sağlar</li>
+            <li>🏥 Tıp, mimarlık gibi alanlarda uygulamalı öğrenmeye olanak tanır</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AR Nedir -->
+  <section id="ar" class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6 order-md-2">
+          <img src="images/ar1.jpg" alt="AR Uygulaması Kullanımı" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h2 class="fw-bold mb-3">AR Nedir?</h2>
+          <p class="lead">AR (Augmented Reality), gerçek dünya üzerine dijital içerikler bindirerek
+            zenginleştirilmiş bir deneyim sunar.</p>
+          <ul>
+            <li>📱 Mobil uygulamalarda yaygın olarak kullanılır</li>
+            <li>🛍️ Alışverişte ürün ön izlemesi sağlar</li>
+            <li>🏗️ Mimari ve teknik çizimlerde modelleme kolaylığı sunar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Premium VR Headsets Timeline Carousel -->
+  <section id="vr-timeline" class="vr-timeline-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">🚀 VR Teknolojisinin Evrimi (1968–2024)</h2>
+        <p class="section-subtitle">Sanal gerçeklik tarihindeki kilometre taşları</p>
+      </div>
+
+      <div id="vrTimelineCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- 1968 – Sword of Damocles -->
+          <div class="carousel-item active">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/1968.png" class="card-image" alt="Sword of Damocles">
+                <div class="year-badge">1968</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🟤</span> Sword of Damocles
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">Ivan Sutherland'ın “Sword of Damocles” prototipi, modern VR’nin ilk somut örneği.
+                    Yapı tavan askılı, perspektifi gerçek zamanlı güncelliyordu.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">🔧</span> Ağır çelik çerçeve & optik mercek sistemi</li>
+                    <li><span class="feature-icon">📐</span> Gerçek dünya etkileşimli ilk kafaya takılan görüntüleme
+                      cihazı</li>
+                    <li><span class="feature-icon">🎓</span> Bilgisayar grafiklerinin gelişimine ilham verdi</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1995 – Nintendo Virtual Boy -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/1995.jpg" class="card-image" alt="Nintendo Virtual Boy">
+                <div class="year-badge">1995</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🔴</span> Nintendo Virtual Boy
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">Nintendo’nun ilk ticari VR denemesi; kırmızı-siyah LED’lerle 3D illüzyon yarattı
+                    fakat düşük çözünürlük sorun oldu.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">👓</span> Monokrom 3D görüntü teknolojisi</li>
+                    <li><span class="feature-icon">🎮</span> Ergonomi sorunları ve göz yorgunluğu</li>
+                    <li><span class="feature-icon">💸</span> Ticari başarısız ama tarihi öneme sahip</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2012 – Oculus Rift DK1 -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/2012.jpg" class="card-image" alt="Oculus Rift DK1">
+                <div class="year-badge">2012</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🟠</span> Oculus Rift DK1
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">Palmer Luckey’in Kickstarter projesi, VR’yi tekrar gündeme taşıdı ve
+                    geliştiriciler için kit halinde sunuldu.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">💡</span> 640×800 piksel per eye ekran</li>
+                    <li><span class="feature-icon">🎧</span> Entegre 3D ses deneyimi</li>
+                    <li><span class="feature-icon">🔄</span> Temel baş takibi sensörleri</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2016 – Oculus Rift CV1 -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/2016.avif" class="card-image" alt="Oculus Rift CV1">
+                <div class="year-badge">2016</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🟡</span> Oculus Rift CV1
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">Facebook’un satın alımından sonra çıkan ilk tüketici ürünü; yüksek çözünürlük ve
+                    düşük gecikme sundu.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">📺</span> 1080×1200 piksel per eye OLED</li>
+                    <li><span class="feature-icon">⏱️</span> Sub-20 ms gecikme</li>
+                    <li><span class="feature-icon">🎮</span> Touch kontrolcülerle etkileşim</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2016 – HTC Vive -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/20162.jpg" class="card-image" alt="HTC Vive">
+                <div class="year-badge">2016</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🟢</span> HTC Vive
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">Valve ile ortak geliştirilen Vive, odada serbest dolaşma (“room-scale”)
+                    deneyimini ilk sunan cihazdı.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">📍</span> Lighthouse taban istasyonları</li>
+                    <li><span class="feature-icon">🚶</span> Gerçek yürüme hareketi takibi</li>
+                    <li><span class="feature-icon">💻</span> SteamVR uyumluluğu</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2018 – Oculus Go -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/2018.jpg" class="card-image" alt="Oculus Go">
+                <div class="year-badge">2018</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🔵</span> Oculus Go
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">PC veya telefon gerektirmeyen bağımsız model; medya tüketimi ve basit deneyimler
+                    için tasarlandı.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">🔋</span> 2–3 saat pil ömrü</li>
+                    <li><span class="feature-icon">🎧</span> Entegre 3D ses hoparlörleri</li>
+                    <li><span class="feature-icon">👆</span> Tek dokunmatik kontrolcü</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2019 – Oculus Rift S -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/2019.webp" class="card-image" alt="Oculus Rift S">
+                <div class="year-badge">2019</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🔵</span> Oculus Rift S
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">Inside-out tracking ile ek sensör gereksinimini kaldırdı; daha rahat oturuş ve
+                    kurulum sundu.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">👁️</span> 5 adet kameralı izleme</li>
+                    <li><span class="feature-icon">🙌</span> Güncellenmiş Touch kontrolcüler</li>
+                    <li><span class="feature-icon">🛠️</span> Daha hızlı kurulum</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2020 – Meta Quest 2 -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/2020.avif" class="card-image" alt="Meta Quest 2">
+                <div class="year-badge">2020</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🟣</span> Meta Quest 2
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">Kablolu ve kablosuz esneklik; uygun fiyat ve güçlü performansıyla geniş kitleye
+                    ulaştı.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">⚙️</span> Snapdragon XR2 çipset</li>
+                    <li><span class="feature-icon">📐</span> 1832×1920 per eye çözünürlük</li>
+                    <li><span class="feature-icon">🔄</span> PC Link desteği</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2022 – PlayStation VR2 -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/2022.jpg" class="card-image" alt="PlayStation VR2">
+                <div class="year-badge">2022</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">⚪</span> PlayStation VR2
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">PS5’e özel; 4K HDR OLED, göz takibi ve haptic dokunsal etkileşim sundu.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">🎮</span> Sense kontrolcü desteği</li>
+                    <li><span class="feature-icon">👁️</span> Foveated rendering</li>
+                    <li><span class="feature-icon">🌈</span> HDR & geniş renk gamı</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2023 – Meta Quest Pro -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/2023.webp" class="card-image" alt="Meta Quest Pro">
+                <div class="year-badge">2023</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">⚫</span> Meta Quest Pro
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">Göz takibi ve renkli passthrough ile karma gerçeklik deneyimi; profesyonel
+                    kullanıma yönelik.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">👀</span> Gelişmiş eye-tracking</li>
+                    <li><span class="feature-icon">🔄</span> Çoklu passthrough kamerası</li>
+                    <li><span class="feature-icon">💼</span> İş ve tasarım odaklı</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2024 – Apple Vision Pro -->
+          <div class="carousel-item">
+            <div class="vr-card">
+              <div class="card-image-wrapper">
+                <img src="images/2024.jpg" class="card-image" alt="Apple Vision Pro">
+                <div class="year-badge">2024</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <span class="device-icon">🍏</span> Apple Vision Pro
+                </h3>
+                <div class="card-content">
+                  <p class="card-text">El, göz ve sesle kontrol; ultra yüksek çözünürlük ve Spatial Computing kavramını
+                    tanıttı.</p>
+                  <ul class="feature-list">
+                    <li><span class="feature-icon">🔍</span> 4K mikro OLED ekranlar</li>
+                    <li><span class="feature-icon">🧠</span> M2 + R1 çipset mimarisi</li>
+                    <li><span class="feature-icon">🗺️</span> Gelişmiş 3D ortam haritalama</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="6"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="7"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="8"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="9"></button>
+          <button type="button" data-bs-target="#vrTimelineCarousel" data-bs-slide-to="10"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VR Deneyimini Etkileyen Unsurlar -->
+  <section id="kullanici-deneyimi" class="experience-section py-5 bg-dark text-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">🚀 Deneyimi Etkileyen Başlıca Unsurlar</h2>
+      <div class="row g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+        <!-- 1. Düşük Gecikme -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-secondary text-light shadow-sm transition hover-shadow">
+            <!-- Görsel oranı 4:3, aynı yükseklikte tüm kartlar için -->
+            <div class="ratio ratio-4x3">
+              <img src="images/3v-platform-illustration-static.webp" alt="Düşük Gecikme"
+                class="card-img-top object-fit-cover rounded-top">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">📉 Düşük Gecikme</h5>
+              <p class="card-text flex-grow-1">
+                Tepki süresi 20 ms’nin altına indiğinde, baş hareketi ile görüntü güncellemesi senkronize
+                kalır; baş dönmesi ve bulantı riski minimize edilir.
+              </p>
+              <button class="btn btn-accent btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#modalGecikme">
+                Detay
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Düşük Gecikme Detay Modal -->
+        <div class="modal fade" id="modalGecikme" tabindex="-1" aria-labelledby="modalGecikmeLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-light">
+              <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalGecikmeLabel">📉 Düşük Gecikme</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row g-4">
+
+                    <div class="col-12">
+                      <h6 class="fw-semibold">Tanım</h6>
+                      <p>Kullanıcının başını çevirmesiyle ekrandaki görüntünün yenilenmesi arasındaki süre.</p>
+                    </div>
+
+                    <div class="col-12">
+                      <h6 class="fw-semibold">İdeal Süre</h6>
+                      <p>20 ms’nin altında olmalıdır; üstüne çıktıkça senkron kaybı yaşanır.</p>
+                    </div>
+
+                    <div class="col-12">
+                      <h6 class="fw-semibold">Etkileri</h6>
+                      <ul class="list-unstyled ps-3">
+                        <li>🔴 Yüksek gecikme baş dönmesi ve bulantı oluşturur.</li>
+                        <li>🔴 Kullanıcı adaptasyonu ve konforu olumsuz etkiler.</li>
+                        <li>🟢 90 Hz ve üzeri tazeleme hızları gecikmeyi minimize eder.</li>
+                      </ul>
+                    </div>
+
+                    <div class="col-12">
+                      <h6 class="fw-semibold">Gerçek Hayat Örneği</h6>
+                      <p>
+                        VR gözlükle sanal müzede dolaşırken gecikme yüksek olursa,
+                        kullanıcı döndüğünde görüntü gecikmeli geldiğinden oryantasyon kaybı yaşanır.
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 2. Görsel Kalite -->
+        <style>
+          /* Modal & Kart için özel stiller */
+          #modalGorsel .modal-dialog {
+            max-width: 500px;
+            margin: 1.5rem auto;
+          }
+
+          #modalGorsel .modal-content {
+            background: rgba(10, 25, 47, 0.9);
+            border-radius: 0.5rem;
+            color: #d0d8f0;
+          }
+
+          #modalGorsel .modal-header {
+            border-bottom: 1px solid rgba(204, 214, 246, 0.2);
+            padding-bottom: 0.75rem;
+          }
+
+          #modalGorsel .modal-title {
+            color: var(--accent);
+            font-size: 1.25rem;
+            font-weight: 600;
+          }
+
+          #modalGorsel .btn-close {
+            filter: invert(1);
+          }
+
+          #modalGorsel .modal-body {
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+          }
+
+          #modalGorsel .modal-body h6 {
+            margin-top: 1rem;
+            font-weight: 600;
+            color: var(--accent);
+          }
+
+          #modalGorsel .modal-body ul {
+            list-style: disc inside;
+            margin: 0.5rem 0 1rem;
+            padding-left: 1rem;
+          }
+
+          #modalGorsel .modal-body ul li {
+            margin-bottom: 0.5rem;
+          }
+        </style>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-light h-100 shadow-sm hover-shadow transition">
+            <div class="ratio ratio-4x3">
+              <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top object-fit-cover rounded-top" alt="Görsel Kalite">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">🖼️ Görsel Kalite</h5>
+              <p class="card-text flex-grow-1">
+                Yüksek çözünürlük ve netlik, kullanıcı odaklanmasını güçlendirir ve sanal ortamın gerçekliğini artırır.
+              </p>
+              <button class="btn btn-accent btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#modalGorsel">
+                Detay
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalGorsel" tabindex="-1" aria-labelledby="modalGorselLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalGorselLabel">🖼️ Görsel Kalite</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <h6>🔍 Piksel Yoğunluğu (PPI)</h6>
+                <p>
+                  Küçük pikseller, ekrana bakmıyormuş hissi yaratır. <strong>Yüksek PPI</strong> ile görüntü daha
+                  keskin,
+                  gerçekçi ve doğal görünür.
+                </p>
+                <h6>👁️ Retina Seviyesi</h6>
+                <p>
+                  Gözün ayırt edemediği kadar sık pikseller, immersion’u katlar. Apple’ın “retina” ekranlarında olduğu
+                  gibi
+                  pikselsiz sanal gerçeklik keyfi.
+                </p>
+                <h6>🔄 Yenileme Hızı</h6>
+                <p>
+                  90 Hz ve üzeri akıcı geçişler sunar. <strong>Düşük yenileme</strong> (60 Hz) flicker ve bulanıklık
+                  hissi
+                  yaratarak konforu düşürür.
+                </p>
+                <h6>👓 Lens Kalitesi & FOV</h6>
+                <ul>
+                  <li>Kenarlardaki bozulmaları en aza indiren kaliteli lensler</li>
+                  <li>Daha geniş görüş alanı (Field of View) ile tam kapsayıcı deneyim</li>
+                </ul>
+                <p>
+                  Tüm bu öğeler bir araya geldiğinde beyin, sanal ortamı gerçekmiş gibi algılar ve kullanıcı
+                  deneyimi üst düzeye çıkar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 3. 3D Ses -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-light h-100 shadow-sm hover-shadow transition">
+            <img src="images/Ses.png" class="card-img-top border border-3 border-dark-subtle" alt="3D Ses">
+            <div class="card-body">
+              <h5 class="card-title">🎧 3D Ses</h5>
+              <p class="card-text">Sesin yönü ve derinliği, oryantasyonu güçlendirir.</p>
+              <button class="btn btn-accent btn-sm mt-2" data-bs-toggle="modal"
+                data-bs-target="#modalSes">Detay</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: 3D Ses Detay -->
+        <div class="modal fade" id="modalSes" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-light">
+              <div class="modal-header border-secondary">
+                <h5 class="modal-title">🎧 3D Ses</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Kullanıcının sesin geldiği yönü algılaması, sanal ortamdaki pozisyonunu güçlendirir.
+                  3D ses, gerçek ortamda olduğu gibi yönsel ses deneyimi sunar.
+                  Bu teknoloji sayesinde kullanıcı, bir sesin sağdan mı soldan mı geldiğini,
+                  hatta yukarıdan mı aşağıdan mı yaklaştığını net şekilde algılayabilir.
+                </p>
+                <ul>
+                  <li>🔊 Yönsel ses sayesinde etkileşimli ortamlarda daha iyi oryantasyon sağlanır.</li>
+                  <li>🎮 Özellikle aksiyon oyunlarında tehditlerin yönünü algılamak önemlidir.</li>
+                  <li>🏥 Eğitim simülasyonlarında ortam hissiyatını güçlendirerek öğrenmeyi destekler.</li>
+                </ul>
+
+                <!-- YouTube Shorts Embed -->
+                <div class="ratio ratio-16x9 mt-3">
+                  <iframe src="https://www.youtube.com/embed/QYU3G0SR6Iw" title="3D Audio VR Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="rounded shadow">
+                  </iframe>
+                </div>
+                <p class="mt-2 text-muted small">🎥 Video: 3D ses yönlerinin kullanıcıya nasıl aktarıldığına dair örnek.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 4. Sezgisel Arayüz -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-light h-100 shadow-sm hover-shadow transition">
+            <img src="images/arayuz.png" class="card-img-top border border-3 border-dark-subtle" alt="Sezgisel Arayüz">
+            <div class="card-body">
+              <h5 class="card-title">🧠 Sezgisel Arayüz</h5>
+              <p class="card-text">Rehbere ihtiyaç duymadan kullanılabilen arayüzler tasarlanmalıdır.</p>
+              <button class="btn btn-accent btn-sm mt-2" data-bs-toggle="modal"
+                data-bs-target="#modalArayuz">Detay</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: Sezgisel Arayüz -->
+        <div class="modal fade" id="modalArayuz" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-light">
+              <div class="modal-header border-secondary">
+                <h5 class="modal-title">🧠 Sezgisel Arayüz</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  İyi bir kullanıcı arayüzü, kullanıcıyı adım adım yönlendirmeli ve herhangi bir eğitime gerek kalmadan
+                  anlaşılır olmalıdır.
+                  Özellikle VR/AR sistemlerinde, karmaşık menüler kullanıcıyı deneyimden uzaklaştırır.
+                </p>
+                <ul>
+                  <li>👶 Her yaştan birey (çocuk, yaşlı) kolayca anlayabilmelidir.</li>
+                  <li>🖐️ Hareketle kontrol edilen butonlar doğal olmalı (elini uzattığında ışık yanması gibi).</li>
+                  <li>👁️ Menü tasarımı göz hareketlerine veya kontrolcüye duyarlı olmalıdır.</li>
+                  <li>🔄 Geri bildirimi net olmalı (tıklanınca renk değişimi, titreşim gibi).</li>
+                </ul>
+
+                <!-- YouTube Embed (örnek video) -->
+                <div class="ratio ratio-16x9 mt-3">
+                  <iframe src="https://www.youtube.com/embed/z7Q5MpZYjxM" title="Intuitive UI in VR"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="rounded shadow">
+                  </iframe>
+                </div>
+                <p class="mt-2 text-muted small">
+                  🎥 Video: VR sistemlerinde sezgisel arayüz kullanımıyla ilgili uygulamalı bir örnek.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 5. Ergonomik Durum Kartı -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-secondary text-light h-100 shadow-sm hover-shadow transition">
+            <img src="images/ergonomi.png" class="card-img-top border border-3 border-dark-subtle"
+              alt="Ergonomik Durum">
+            <div class="card-body">
+              <h5 class="card-title">🪑 Ergonomik Durum</h5>
+              <p class="card-text">
+                Cihazın fiziksel konfor kriterleri: denge, ağırlık ve yüz pedi özellikleri.
+              </p>
+              <button class="btn btn-accent btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalErgonomi">
+                Detay
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal: Ergonomik Durum Detay -->
+        <div class="modal fade" id="modalErgonomi" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-light">
+              <div class="modal-header border-secondary">
+                <h5 class="modal-title">🪑 Ergonomik Durum</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row g-4">
+
+                    <!-- 1. Denge -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 bg-secondary text-light shadow-sm">
+                        <img src="images/denge.jpg" class="card-img-top" alt="Denge – Valve Index">
+                        <div class="card-body">
+                          <h5 class="card-title">Denge</h5>
+                          <p class="card-text">
+                            Başın her yerine eşit dağılan ağırlık, boyun ve omuz ağrısını engeller.
+                          </p>
+                          <p class="small">
+                            <strong>Öne Çıkan Model:</strong><br>
+                            Valve Index – Halo bant tasarımıyla ağırlığı tepe noktaya eşit dağıtır.
+                            <a href="https://vrone.co.uk" class="link-light" target="_blank">Kaynak</a><br>
+                            Meta Quest Pro – Geliştirilmiş üst bant sistemiyle dengeyi korur.
+                            <a href="https://www.laptopmag.com" class="link-light" target="_blank">Kaynak</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 2. Lens Uyumu -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 bg-secondary text-light shadow-sm">
+                        <img src="images/lens.jpg" class="card-img-top" alt="Lens Uyumu – HP Reverb G2">
+                        <div class="card-body">
+                          <h5 class="card-title">Lens Uyumu</h5>
+                          <p class="card-text">
+                            Ayarlanabilir lens aralığı, bulanıklık ve baş ağrısını engeller.
+                          </p>
+                          <p class="small">
+                            HP Reverb G2 – 60–68 mm IPD kaydırmalı mekanizma.
+                            <a href="https://support.hp.com" class="link-light" target="_blank">Kaynak</a><br>
+                            HTC Vive Pro 2 – Hassas IPD düğmesiyle “sweet spot” hizalama.
+                            <a href="https://www.vive.com" class="link-light" target="_blank">Kaynak</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 3. Yüz Pedi -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 bg-secondary text-light shadow-sm">
+                        <img src="images/nefes.jpg" class="card-img-top" alt="Yüz Pedi – VR Cover">
+                        <div class="card-body">
+                          <h5 class="card-title">Yüz Pedi</h5>
+                          <p class="card-text">
+                            Nefes alan, yumuşak ve hipoalerjenik malzemeler tercih edilmeli.
+                          </p>
+                          <p class="small">
+                            VR Cover Kumaş Pedi – %100 pamuk, teri hızla dışarı atar.
+                            <a href="https://vrcover.com" class="link-light" target="_blank">Kaynak</a><br>
+                            TamBee Vive Pro Köpüğü – Delikli PU deri, kolay temizlenir.
+                            <a href="https://www.amazon.com" class="link-light" target="_blank">Kaynak</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 4. Ayarlanabilir Kayış -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 bg-secondary text-light shadow-sm">
+                        <img src="images/kayiş.jpg" class="card-img-top" alt="Ayarlanabilir Kayış – Valve Index">
+                        <div class="card-body">
+                          <h5 class="card-title">Ayarlanabilir Kayış</h5>
+                          <p class="card-text">
+                            Farklı baş ölçülerine göre hızlıca adapte olabilmeli.
+                          </p>
+                          <p class="small">
+                            Valve Index – Arka kadranla anında sıkıp gevşetme.
+                            <a href="https://www.vrrealm.com" class="link-light" target="_blank">Kaynak</a><br>
+                            HTC Vive Pro 2 – Dayanıklı ayar düğmesiyle tam uyum.
+                            <a href="https://www.reddit.com" class="link-light" target="_blank">Kaynak</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 5. Ağırlık -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 bg-secondary text-light shadow-sm">
+                        <img src="images/agirlik.png" class="card-img-top" alt="Ağırlık – HTC Vive Flow">
+                        <div class="card-body">
+                          <h5 class="card-title">Ağırlık</h5>
+                          <p class="card-text">
+                            500 g altında modeller uzun kullanımlarda yorgunluğu azaltır.
+                          </p>
+                          <p class="small">
+                            HTC Vive Flow – Sadece 189 g ultra hafif.
+                            <a href="https://www.vive.com" class="link-light" target="_blank">Kaynak</a><br>
+                            DPVR P1 – 340 g (kablosuz), 418 g (kablolu).
+                            <a href="https://www.vrcompare.com" class="link-light" target="_blank">Kaynak</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Genel Not -->
+                    <div class="col-12">
+                      <p class="mt-3 text-center small text-muted">
+                        Ergonomik optimizasyon, özellikle uzun VR/AR oturumlarında kullanıcı memnuniyetini ve
+                        performansını doğrudan etkiler.
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="zorluklar" class="py-5 bg-dark text-light">
+          <div class="container">
+            <h2 class="fw-bold mb-5 text-center display-5">🚧 VR/AR Teknolojilerinde Karşılaşılan Zorluklar</h2>
+            <div class="row g-5">
+
+              <!-- 💸 Donanım Maliyeti -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg h-100 bg-secondary text-light">
+                  <img src="images/maliyet.jpg" class="card-img-top rounded-top" alt="Donanım Maliyeti">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">💸 Donanım Maliyeti</h5>
+                    <p class="card-text">VR ekipmanları başlangıç için ciddi maliyetler oluşturabilir.</p>
+                    <ul class="small ps-3">
+                      <li>VR gözlük + yüksek performanslı PC gerekir</li>
+                      <li>Eğitim kurumlarında ölçeklendirme zor</li>
+                      <li>Ek aksesuarlar bütçeyi artırır</li>
+                    </ul>
+                    <div class="mt-auto text-end">
+                      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalMaliyet">
+                        Daha Fazla Bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 💸 Modal - Donanım Maliyeti -->
+              <div class="modal fade" id="modalMaliyet" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-secondary">
+                      <h5 class="modal-title">💸 Donanım Maliyeti</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                          <img src="images/maliyet.jpg" alt="Donanım Görseli" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                          <p class="lead fw-semibold">
+                            VR sistemleri yalnızca bir gözlükten ibaret değildir. Akıcı bir deneyim için güçlü bir
+                            altyapı gerekir.
+                          </p>
+                          <ul>
+                            <li>💻 <strong>Yüksek Performans:</strong> RTX serisi ekran kartları ve SSD disk zorunlu
+                              hâle geliyor.</li>
+                            <li>🎮 <strong>Ekstra Aksesuarlar:</strong> Hareket kontrolcüleri, baz istasyonları ve
+                              kulaklık sistemleri ekleniyor.</li>
+                            <li>🏫 <strong>Eğitimde Yük:</strong> Çok sayıda cihaz edinmek ciddi bütçeler ister.</li>
+                            <li>⚙️ <strong>Alternatif:</strong> Meta Quest gibi bağımsız çalışan cihazlar başlangıç için
+                              ideal olabilir.</li>
+                          </ul>
+                          <p class="small text-muted mt-2">
+                            💡 Gelişen teknolojiyle fiyatlar düşse de, profesyonel VR sistemleri hâlâ yüksek maliyetli
+                            çözümlerdir.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                      <small class="text-light-emphasis">Kaynak: Valve, Meta, SteamVR Teknik Belgeleri</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 🤯 Fiziksel Rahatsızlık -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg h-100 bg-secondary text-light">
+                  <img src="images/fizikselrahatsizlik.jpg" class="card-img-top rounded-top" alt="Fiziksel Rahatsızlık">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">🤯 Fiziksel Rahatsızlık</h5>
+                    <p class="card-text">Sanal ortama uyum sağlayamayan kullanıcılar bazı fiziksel semptomlar
+                      yaşayabilir.</p>
+                    <ul class="small ps-3">
+                      <li>Baş dönmesi ve mide bulantısı</li>
+                      <li>Denge kaybı, göz yorgunluğu</li>
+                      <li>“VR Sickness” olarak adlandırılır</li>
+                    </ul>
+                    <div class="mt-auto text-end">
+                      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalFiziksel">
+                        Daha Fazla Bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal: Fiziksel Rahatsızlık -->
+              <div class="modal fade" id="modalFiziksel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-secondary">
+                      <h5 class="modal-title">🤯 Fiziksel Rahatsızlıklar (VR Sickness)</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                          <img src="images/fizikselrahatsizlik.jpg" alt="VR Sickness Görseli"
+                            class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                          <p class="lead fw-semibold">
+                            VR cihazları, beyne gerçekmiş gibi sinyal gönderir. Ancak gözle görülen hareketle vücut
+                            tepkisi uyuşmadığında beyin bu çelişkiyi “rahatsızlık” olarak algılar.
+                          </p>
+                          <ul>
+                            <li>🌀 <strong>Baş dönmesi:</strong> Görsel gecikmeler denge hissini bozar.</li>
+                            <li>🤢 <strong>Mide bulantısı:</strong> Zihinsel-vestibüler sistem uyuşmazlığı sonucu
+                              oluşur.</li>
+                            <li>😵 <strong>Göz yorgunluğu:</strong> Yakın mesafede ekranlara uzun süre bakmak odak
+                              kaslarını zorlar.</li>
+                            <li>🕒 <strong>Kimlerde daha sık?:</strong> Yeni kullanıcılar, yaşlı bireyler ve vestibüler
+                              hassasiyeti olan kişiler.</li>
+                          </ul>
+                          <p class="small text-muted mt-2">
+                            💡 İpucu: İlk kullanım süreleri kısa tutulmalı ve cihazlar 90Hz üzeri tazeleme hızına sahip
+                            olmalı.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                      <small class="text-light-emphasis">Kaynak: Oculus Developer Docs, Mayo Clinic</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 🔋 Uzun Süreli Kullanım -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg h-100 bg-secondary text-light">
+                  <img
+                    src="images/vr-stress-business-woman-headache-exploring-metaverse-office-mental-health-anxiety-female-migraine-vr-270879324.jpg"
+                    class="card-img-top rounded-top" alt="Uzun Süreli Kullanım">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">🔋 Uzun Süreli Kullanım</h5>
+                    <p class="card-text">Ağır cihazlar ve uzun oturumlar fiziksel yorgunluğu beraberinde getirir.</p>
+                    <ul class="small ps-3">
+                      <li>500g üzeri cihazlar boyun ağrısı yapabilir</li>
+                      <li>Gözde kuruluk, baş ağrısı oluşabilir</li>
+                      <li>Mola verilmeden kullanım önerilmez</li>
+                    </ul>
+                    <div class="mt-auto text-end">
+                      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalYorgunluk">
+                        Daha Fazla Bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal: Uzun Süreli Kullanım -->
+              <div class="modal fade" id="modalYorgunluk" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-secondary">
+                      <h5 class="modal-title">🔋 Uzun Süreli Kullanım ve Fiziksel Yorgunluk</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                          <img
+                            src="images/vr-stress-business-woman-headache-exploring-metaverse-office-mental-health-anxiety-female-migraine-vr-270879324.jpg"
+                            alt="Yorgunluk Görseli" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                          <p class="lead fw-semibold">
+                            VR cihazları kafa ve yüz üzerine monte edildiği için ağırlık merkezine baskı yapar. Bu da
+                            kas yorgunluğu, odak kaybı ve göz kuruluğuna neden olur.
+                          </p>
+                          <ul>
+                            <li>🧠 <strong>Konsantrasyon Kaybı:</strong> Sürekli görsel uyarana maruz kalmak zihinsel
+                              yorgunluğu artırır.</li>
+                            <li>👓 <strong>Göz Problemleri:</strong> Yakın odaklama + ekran parlaklığı → kuruluk,
+                              bulanıklık.</li>
+                            <li>💪 <strong>Kas Yorgunluğu:</strong> Baş, boyun ve omuzlarda ağrı, özellikle ağır
+                              cihazlarda yaygındır.</li>
+                            <li>⏱️ <strong>Optimum Kullanım:</strong> 20-30 dakikalık oturumlar sonrası mola verilmesi
+                              önerilir.</li>
+                          </ul>
+                          <p class="small text-muted mt-2">
+                            💡 Hafif tasarımlı cihazlar (örneğin HTC Vive Flow) ve ergonomik denge ayarları bu sorunu
+                            azaltabilir.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                      <small class="text-light-emphasis">Kaynak: XR Ergonomi Raporları, HTC Vive Design Guide</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 🧠 Algı Yorgunluğu -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg h-100 bg-secondary text-light">
+                  <img
+                    src="images/psychotherapy-abstract-concept-vector-illustration-non-pharmacological-intervention-verbal-counseling-psychotherapy-service-behavioral-cognitive-therapy-private-session-abstract-metaphor_335657-4092.avif"
+                    class="card-img-top rounded-top" alt="Algı Yorgunluğu">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">🧠 Algı Yorgunluğu</h5>
+                    <p class="card-text">VR ortamları beyne sürekli uyaran gönderdiğinden zihinsel yorgunluk
+                      yaratabilir.</p>
+                    <ul class="small ps-3">
+                      <li>Uzun oturumlarda dikkat dağınıklığı</li>
+                      <li>Karmaşık içerikler beyin yükünü artırır</li>
+                      <li>Sezgisel olmayan deneyimler daha da yorucu</li>
+                    </ul>
+                    <div class="mt-auto text-end">
+                      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalAlgiyorgun">
+                        Daha Fazla Bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal: Algı Yorgunluğu -->
+              <div class="modal fade" id="modalAlgiyorgun" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-secondary">
+                      <h5 class="modal-title">🧠 Algı Yorgunluğu (Cognitive Fatigue)</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                          <img
+                            src="images/psychotherapy-abstract-concept-vector-illustration-non-pharmacological-intervention-verbal-counseling-psychotherapy-service-behavioral-cognitive-therapy-private-session-abstract-metaphor_335657-4092.avif"
+                            alt="Zihinsel Yorgunluk Görseli" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                          <p class="lead fw-semibold">
+                            VR/AR deneyimlerinde beyin, sürekli olarak 3D çevreyi analiz etmeye çalışır. Bu sürekli
+                            işlem yükü kullanıcıda bilişsel tükenmeye neden olabilir.
+                          </p>
+                          <ul>
+                            <li>🧭 <strong>Karmaşık Sahne İşleme:</strong> Beyin, gerçeklikten farklı sahneleri
+                              yorumlamak için fazladan çalışır.</li>
+                            <li>🌀 <strong>Bilişsel Aşırı Yük:</strong> Menü, görev, kontrol gibi aynı anda çok fazla
+                              bilgi işlenir.</li>
+                            <li>👀 <strong>Duyusal Uyum:</strong> Göz ve vücut algısı sürekli yeniden senkronize olur,
+                              bu da yorucudur.</li>
+                            <li>🧩 <strong>UI/UX Önemi:</strong> Sezgisel olmayan sistemler bu yükü katlar.</li>
+                          </ul>
+                          <p class="small text-muted mt-2">
+                            💡 Basit arayüzler, rehberli akışlar ve kullanıcıya adım adım yardım sağlayan yapılar tercih
+                            edilmelidir.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                      <small class="text-light-emphasis">Kaynak: Human Factors in XR Design, UX Collective VR
+                        Edition</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 🕹️ Karmaşık Arayüzler -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg h-100 bg-secondary text-light">
+                  <img src="images/karmasıkarayuz.webp" class="card-img-top rounded-top" alt="Karmaşık Arayüzler">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">🕹️ Karmaşık Arayüzler</h5>
+                    <p class="card-text">Kullanıcı arayüzü sezgisel değilse, deneyimden kopuş yaşanabilir.</p>
+                    <ul class="small ps-3">
+                      <li>Menüler fazla katmanlı veya küçük olabilir</li>
+                      <li>Kontroller karışık ve tepkisiz olabilir</li>
+                      <li>Geri bildirim eksikliği kafa karıştırır</li>
+                    </ul>
+                    <div class="mt-auto text-end">
+                      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalArayuzZor">
+                        Daha Fazla Bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal: Karmaşık Arayüzler -->
+              <div class="modal fade" id="modalArayuzZor" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-secondary">
+                      <h5 class="modal-title">🕹️ Sezgisel Olmayan Kullanıcı Arayüzleri</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                          <img src="images/karmasıkarayuz.webp" alt="UI Sorunu Görseli" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                          <p class="lead fw-semibold">
+                            VR/AR arayüzleri, klasik 2D uygulamalardan farklı olarak 3D uzayda gezinme gerektirir. Bu
+                            durum kullanıcı için karışık ve yorucu olabilir.
+                          </p>
+                          <ul>
+                            <li>🖐️ <strong>Doğal Etkileşim Eksikliği:</strong> El hareketleriyle kontrol
+                              desteklenmiyorsa kullanıcı zorlanır.</li>
+                            <li>🔍 <strong>Görsel Rehber Eksikliği:</strong> “Nereye tıklayacağım?” sorusu sık yaşanır.
+                            </li>
+                            <li>🎮 <strong>Controller Karmaşası:</strong> Her cihazın farklı kontrol mantığı olması
+                              öğrenme sürecini zorlaştırır.</li>
+                            <li>🔄 <strong>Geri Bildirim Eksikliği:</strong> Butona tıklayınca titreşim, ışık veya ses
+                              yoksa tepki algılanmaz.</li>
+                          </ul>
+                          <p class="small text-muted mt-2">
+                            💡 Basit ve görsel olarak rehberli menüler, kullanıcıyı adım adım yönlendiren sistemler
+                            tercih edilmelidir.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                      <small class="text-light-emphasis">Kaynak: VR UI/UX Guidelines – Meta & Unity Docs</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 🔒 Gizlilik Sorunları -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg h-100 bg-secondary text-light">
+                  <img src="images/gizlilik.avif" class="card-img-top rounded-top" alt="Gizlilik Sorunları">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">🔒 Gizlilik Sorunları</h5>
+                    <p class="card-text">VR cihazları, kullanıcıdan ciddi miktarda kişisel veri toplar.</p>
+                    <ul class="small ps-3">
+                      <li>Göz hareketleri, ses, ortam verisi</li>
+                      <li>Verilerin nasıl saklandığı belirsiz</li>
+                      <li>3. parti uygulamalara açık risk</li>
+                    </ul>
+                    <div class="mt-auto text-end">
+                      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalGizlilik">
+                        Daha Fazla Bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal: Gizlilik Sorunları -->
+              <div class="modal fade" id="modalGizlilik" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-secondary">
+                      <h5 class="modal-title">🔒 Gizlilik ve Veri Güvenliği</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                          <img src="images/gizlilik.avif" alt="Veri Güvenliği Görseli" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                          <p class="lead fw-semibold">
+                            VR sistemleri, kullanıcıdan gerçek zamanlı olarak konum, ses, göz takibi, çevre haritalaması
+                            gibi hassas veriler toplar. Bu verilerin nereye gittiği, nasıl işlendiği çoğu zaman
+                            belirsizdir.
+                          </p>
+                          <ul>
+                            <li>👁️ <strong>Göz Takibi:</strong> Kullanıcının nereye baktığı kaydedilir, pazarlama ve
+                              davranışsal analizlerde kullanılabilir.</li>
+                            <li>🎙️ <strong>Ses Analizi:</strong> Mikrofon sürekli açık olabilir, arka plan sesler bile
+                              işlenebilir.</li>
+                            <li>📍 <strong>Alan Taraması:</strong> Cihazlar ortam haritalaması yaparak fiziksel
+                              alanların dijital kopyasını çıkarabilir.</li>
+                            <li>📤 <strong>Veri Paylaşımı:</strong> 3. parti uygulamalarla izinsiz veri paylaşımı
+                              tehlikesi vardır.</li>
+                          </ul>
+                          <p class="small text-muted mt-2">
+                            💡 Kullanıcı verilerinin şeffaf şekilde işlendiği, açık izin politikaları sunan sistemler
+                            tercih edilmelidir.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                      <small class="text-light-emphasis">Kaynak: XR Privacy Whitepaper, Meta Data Handling
+                        Policy</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 📶 Bağlantı Sorunları -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg h-100 bg-secondary text-light">
+                  <img src="images/baglantısorunu.jpg" class="card-img-top rounded-top" alt="Bağlantı Sorunları">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">📶 Bağlantı Sorunları</h5>
+                    <p class="card-text">Kablosuz bağlantılarda yaşanan gecikmeler ve kopmalar kullanıcıyı deneyimden
+                      koparır.</p>
+                    <ul class="small ps-3">
+                      <li>Wi-Fi üzerinden görüntü aktarımı gecikmeli olabilir</li>
+                      <li>Streaming sırasında çözünürlük düşebilir</li>
+                      <li>Bağlantı kopmaları senkronizasyonu bozar</li>
+                    </ul>
+                    <div class="mt-auto text-end">
+                      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#modalBaglanti">
+                        Daha Fazla Bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal: Bağlantı Sorunları -->
+              <div class="modal fade" id="modalBaglanti" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-secondary">
+                      <h5 class="modal-title">📶 Bağlantı Sorunları ve Gecikmeler</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                          <img src="images/baglantısorunu.jpg" alt="Bağlantı Sorunu Görseli"
+                            class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                          <p class="lead fw-semibold">
+                            Kablosuz VR cihazlarında bağlantı hızı ve stabilitesi deneyimin kalitesini doğrudan etkiler.
+                            Özellikle Wi-Fi üzerinden yapılan akışlarda gecikme kaçınılmaz olabilir.
+                          </p>
+                          <ul>
+                            <li>📡 <strong>Gecikmeli Görüntü:</strong> Kullanıcı hareket ettiğinde görüntü geç gelirse
+                              mide bulantısı riski artar.</li>
+                            <li>📉 <strong>Düşük Bitrate:</strong> Ağ yetersizse çözünürlük düşer, görüntü bulanıklaşır.
+                            </li>
+                            <li>🛑 <strong>Bağlantı Kesilmesi:</strong> Ani kesintiler uygulama çökmesine veya
+                              deneyimden kopmaya neden olur.</li>
+                            <li>⚙️ <strong>Çözüm:</strong> 5GHz Wi-Fi ağları, düşük gecikmeli router’lar ve optimize
+                              edilmiş uygulamalar tercih edilmelidir.</li>
+                          </ul>
+                          <p class="small text-muted mt-2">
+                            💡 Özellikle Air Link, Virtual Desktop gibi sistemlerde ağ kalitesi büyük önem taşır.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                      <small class="text-light-emphasis">Kaynak: Meta Quest Air Link Guide, IEEE Wireless VR
+                        Standards</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- 🌐 Dil ve Yerelleştirme -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg h-100 bg-secondary text-light">
+                  <img src="images/dil.webp" class="card-img-top rounded-top" alt="Dil Engeli">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">🌐 Dil ve Yerelleştirme</h5>
+                    <p class="card-text">VR içeriklerinin büyük kısmı İngilizce olduğu için Türkçe kullanıcılar
+                      zorlanabilir.</p>
+                    <ul class="small ps-3">
+                      <li>Menülerde TR dil desteği genellikle eksik</li>
+                      <li>Yazılı/sözlü yönergeler İngilizce</li>
+                      <li>Teknik terimler çevrilmeden bırakılıyor</li>
+                    </ul>
+                    <div class="mt-auto text-end">
+                      <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalDil">
+                        Daha Fazla Bilgi
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal: Dil ve Yerelleştirme -->
+              <div class="modal fade" id="modalDil" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content bg-dark text-light">
+                    <div class="modal-header border-secondary">
+                      <h5 class="modal-title">🌐 Dil ve Yerelleştirme Problemleri</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                          <img src="images/dil.webp" alt="Dil Desteği Görseli" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                          <p class="lead fw-semibold">
+                            Çoğu VR/AR uygulaması, başta İngilizce olmak üzere sınırlı dil desteğiyle yayınlanır. Bu da
+                            Türkçe konuşan kullanıcılar için erişilebilirlik sorunları yaratır.
+                          </p>
+                          <ul>
+                            <li>🗺️ <strong>Küresel Geliştirme:</strong> Uygulamalar genelde ABD merkezli olduğu için
+                              yerelleştirme ihmal edilir.</li>
+                            <li>🔊 <strong>Sesli Komutlar:</strong> Sesli yönlendirmeler Türkçe algılanmaz ya da hiç
+                              desteklenmez.</li>
+                            <li>📃 <strong>Yetersiz Çeviri:</strong> Menü ve içeriklerde çeviri yapılmadan İngilizce
+                              bırakılır.</li>
+                            <li>💬 <strong>Çözüm:</strong> TR dil desteği olan uygulamalar tercih edilmeli veya
+                              geliştiricilere geri bildirim verilmelidir.</li>
+                          </ul>
+                          <p class="small text-muted mt-2">
+                            💡 Açık kaynak projeler ve yerli geliştiriciler tarafından yapılan içerikler bu konuda daha
+                            başarılı olabilir.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                      <small class="text-light-emphasis">Kaynak: XR Localization Reports, Meta Dev Community</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ——————————— ZORLUKLARA YÖNELİK AKILLI ÇÖZÜMLER BÖLÜMÜ ——————————— -->
+        <section id="cozumler" class="py-6">
+          <div class="container">
+            <h2 class="text-center fw-bold mb-5">🧩 Zorluklara Yönelik Akıllı Çözümler</h2>
+            <div class="row gx-5">
+              <!-- SOL NAV -->
+              <div class="col-lg-4 mb-4">
+                <div class="nav flex-column nav-pills me-3" id="solution-tabs" role="tablist"
+                  aria-orientation="vertical">
+                  <button class="nav-link active" id="tab1" data-bs-toggle="pill" data-bs-target="#sol1" type="button"
+                    role="tab">
+                    💸 Donanım Maliyeti
+                  </button>
+                  <button class="nav-link" id="tab2" data-bs-toggle="pill" data-bs-target="#sol2" type="button"
+                    role="tab">
+                    🤯 Fiziksel Rahatsızlık
+                  </button>
+                  <button class="nav-link" id="tab3" data-bs-toggle="pill" data-bs-target="#sol3" type="button"
+                    role="tab">
+                    🔋 Uzun Kullanım
+                  </button>
+                  <button class="nav-link" id="tab4" data-bs-toggle="pill" data-bs-target="#sol4" type="button"
+                    role="tab">
+                    🧠 Algı Yorgunluğu
+                  </button>
+                  <button class="nav-link" id="tab5" data-bs-toggle="pill" data-bs-target="#sol5" type="button"
+                    role="tab">
+                    🕹️ Arayüz Sorunları
+                  </button>
+                  <button class="nav-link" id="tab6" data-bs-toggle="pill" data-bs-target="#sol6" type="button"
+                    role="tab">
+                    🔒 Gizlilik
+                  </button>
+                  <button class="nav-link" id="tab7" data-bs-toggle="pill" data-bs-target="#sol7" type="button"
+                    role="tab">
+                    📶 Bağlantı
+                  </button>
+                  <button class="nav-link" id="tab8" data-bs-toggle="pill" data-bs-target="#sol8" type="button"
+                    role="tab">
+                    🌐 Dil Desteği
+                  </button>
+                </div>
+              </div>
+              <!-- SAĞ İÇERİK -->
+              <div class="col-lg-8">
+                <div class="tab-content" id="solution-tab-content">
+                  <!-- 1. Donanım Maliyeti -->
+                  <div class="tab-pane fade show active" id="sol1" role="tabpanel">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h4>🎯 Uygun Maliyetli Sistemler</h4>
+                        <p>Hem bireysel hem kurumsal kullanımda bütçe dostu çözüm önerileri:</p>
+                        <ul>
+                          <li><strong>Standalone VR:</strong> All-in-one modeller (Meta Quest 2/3).</li>
+                          <li><strong>Kiralama Modelleri:</strong> Eğitim ve etkinlikler için planlı kiralama.</li>
+                          <li><strong>Toplu Alım İndirimi:</strong> Birden fazla siparişte %10–20 avantaj.</li>
+                          <li><strong>Modüler Yükseltme:</strong> Lens veya kafa bandı değişimiyle güncelleme.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2. Fiziksel Rahatsızlık -->
+                  <div class="tab-pane fade" id="sol2" role="tabpanel">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h4>🎯 Ergonomik Optimize Cihazlar</h4>
+                        <p>Boyun, omuz ve göz konforunu yükseltecek yöntemler:</p>
+                        <ul>
+                          <li><strong>Yüksek Hz:</strong> 90 Hz+ tazeleme ile titreşimi azalt.</li>
+                          <li><strong>IPD Ayarı:</strong> 55–72 mm arası hassas lens mesafesi.</li>
+                          <li><strong>Hafif Yapı:</strong> 300 g altı gövde yorgunluğu önler.</li>
+                          <li><strong>Ergonomik Yüz Pedi:</strong> Nefes alan, hipoalerjenik kumaş.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3. Uzun Kullanım -->
+                  <div class="tab-pane fade" id="sol3" role="tabpanel">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h4>🎯 Batarya & Soğutma</h4>
+                        <p>Kesintisiz deneyim için güç ve termal yönetim:</p>
+                        <ul>
+                          <li><strong>Harici Batarya:</strong> 10 000 mAh+ powerbank entegrasyonu.</li>
+                          <li><strong>Aktif Soğutma:</strong> USB-C fan modülleriyle ısıyı dışarı at.</li>
+                          <li><strong>Isı Sensörleri:</strong> Otomatik parlaklık düşürme.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4. Algı Yorgunluğu -->
+                  <div class="tab-pane fade" id="sol4" role="tabpanel">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h4>🎯 Dinamik Görüntü Ayarları</h4>
+                        <p>Göz ve beyin yorgunluğunu azaltan teknolojiler:</p>
+                        <ul>
+                          <li><strong>Foveated Rendering:</strong> Göz izleme ile odak noktasını optimize et.</li>
+                          <li><strong>Adaptif Parlaklık:</strong> Ortam ışığına göre kontrast ayarı.</li>
+                          <li><strong>Motion Smoothing:</strong> Hareket bulanıklığını engelleyen yazılım.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5. Arayüz Sorunları -->
+                  <div class="tab-pane fade" id="sol5" role="tabpanel">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h4>🎯 Kullanıcı Dostu Arayüz</h4>
+                        <p>Akıcı ve sezgisel kontrol için:</p>
+                        <ul>
+                          <li><strong>Basitleştirilmiş Menüler:</strong> Maks. 2 seviye derinlik.</li>
+                          <li><strong>Sesli & Gaze Kontrol:</strong> Komut ve bakış takibi entegre et.</li>
+                          <li><strong>Sanal Klavye:</strong> Hızlı metin girişi için VR D-pad.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6. Gizlilik -->
+                  <div class="tab-pane fade" id="sol6" role="tabpanel">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h4>🎯 Güvenlik & Veri Koruma</h4>
+                        <p>Kullanıcı verisini koruyacak adımlar:</p>
+                        <ul>
+                          <li><strong>On-Device ML:</strong> Veriyi cihazda işle, buluta gönderme.</li>
+                          <li><strong>Uçtan Uca Şifreleme:</strong> TLS 1.3/HTTPS tüm iletişime.</li>
+                          <li><strong>Anonimleştirme:</strong> Telemetri kimlik bilgisi içermez.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 7. Bağlantı -->
+                  <div class="tab-pane fade" id="sol7" role="tabpanel">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h4>🎯 Kararlı Ağ & Senkron</h4>
+                        <p>Gerçek zamanlı deneyimler için:</p>
+                        <ul>
+                          <li><strong>Wi-Fi 6E/5G:</strong> Düşük gecikme, yüksek bant genişliği.</li>
+                          <li><strong>Adaptive Bitrate:</strong> Ağ durumuna göre kalite.</li>
+                          <li><strong>Offline Modu:</strong> İnternetsizda local oynatma.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 8. Dil Desteği -->
+                  <div class="tab-pane fade" id="sol8" role="tabpanel">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <h4>🎯 Çoklu Dil & Yerelleştirme</h4>
+                        <p>Küresel kullanıcılar için:</p>
+                        <ul>
+                          <li><strong>Gerçek Zamanlı Çeviri:</strong> Altyazı ve sesli komut çevirisi.</li>
+                          <li><strong>RTL Desteği:</strong> Sağdan sola yazı sistemleri.</li>
+                          <li><strong>Dinamik UI:</strong> Dil paketlerini yükle.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <style>
+          /* Google Font */
+          @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+          :root {
+            --primary-dark: #0f2027;
+            --secondary-dark: #203a43;
+            --accent: #2c5364;
+            --highlight: #00d8ff;
+            --text-light: #f1f1f1;
+          }
+
+          #cozumler {
+            background: var(--primary-dark);
+            font-family: 'Nunito', sans-serif;
+          }
+
+          #cozumler h2 {
+            color: var(--text-light);
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+          }
+
+          #cozumler .nav-link {
+            color: var(--text-light);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background 0.3s, transform 0.2s;
+          }
+
+          #cozumler .nav-link:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(4px);
+          }
+
+          #cozumler .nav-link.active {
+            background: var(--accent);
+            color: #fff;
+            border-left: 4px solid var(--highlight);
+          }
+
+          #cozumler .card {
+            background: rgba(30, 45, 60, 0.85);
+            border: none;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          #cozumler .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+          }
+
+          #cozumler .card-body {
+            padding: 1.8rem 2rem;
+          }
+
+          #cozumler h4 {
+            color: var(--highlight);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+          }
+
+          #cozumler p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+          }
+
+          #cozumler ul {
+            list-style: none;
+            padding-left: 0;
+          }
+
+          #cozumler ul li {
+            position: relative;
+            padding-left: 1.8rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-light);
+            line-height: 1.6;
+            transition: color 0.2s;
+          }
+
+          #cozumler ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--highlight);
+          }
+
+          #cozumler ul li:hover {
+            color: var(--highlight);
+          }
+
+          @media (max-width: 991px) {
+            #cozumler .nav-pills {
+              white-space: nowrap;
+              overflow-x: auto;
+              padding-bottom: 0.5rem;
+            }
+          }
+        </style>
+
+<!-- Footer -->
+<footer class="footer bg-dark">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo-container">
+          <svg class="logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.8L20 9v6l-8 4-8-4V9l8-4.2z" fill="currentColor"/>
+            <path d="M12 11.5l-5-2.5v5l5 2.5 5-2.5v-5l-5 2.5z" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">VR<span class="logo-highlight">Evolution</span></span>
+        </div>
+        <p class="brand-slogan">Sanal gerçekliğin geleceğini şekillendiriyoruz</p>
+      </div>
+      
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h5 class="footer-title">Hızlı Linkler</h5>
+          <ul class="footer-links">
+            <li><a href="#">Ana Sayfa</a></li>
+            <li><a href="#">VR Tarihçesi</a></li>
+            <li><a href="#">Teknolojiler</a></li>
+            <li><a href="#">Uygulamalar</a></li>
+            <li><a href="#">İletişim</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h5 class="footer-title">Kaynaklar</h5>
+          <ul class="footer-links">
+            <li><a href="#">Beyaz Kağıtlar</a></li>
+            <li><a href="#">Araştırmalar</a></li>
+            <li><a href="#">API Dokümantasyon</a></li>
+            <li><a href="#">Geliştirici Araçları</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h5 class="footer-title">İletişim</h5>
+          <address class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> Teknoloji Plaza, No:42, İstanbul</p>
+            <p><i class="fas fa-phone"></i> +90 555 123 45 67</p>
+            <p><i class="fas fa-envelope"></i> info@vrexample.com</p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        &copy; 2025 VR Evolution. Tüm hakları saklıdır.
+      </div>
+      <div class="legal-links">
+        <a href="#">Gizlilik Politikası</a>
+        <a href="#">Kullanım Şartları</a>
+        <a href="#">Çerez Politikası</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+        <!-- Bootstrap JS (tab işlevi için) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
